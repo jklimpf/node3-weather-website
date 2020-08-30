@@ -1,16 +1,6 @@
 console.log('Client side javaScript file is loaded!')
 
 
-fetch('http://localhost:3000/weather?address=' + location).then((response) =>{
-    response.json().then((data) => {
-        if(data.error){
-            console.log(data.error)
-        }
-        else
-        console.log(data.location + '\n' + data.forecast)
-    })
-    
-})
 
 const weatherForm = document.querySelector('form')
 const searchButton = document.querySelector('input')
